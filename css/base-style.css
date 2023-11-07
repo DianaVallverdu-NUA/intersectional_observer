@@ -1,0 +1,93 @@
+/* Set margin and paddign defaults to zero */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+}
+
+/* Style for main body */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(253, 253, 245);
+}
+
+/* Set h1 style */
+h1 {
+  margin: 5px;
+  padding: 5px;
+  color: deeppink;
+}
+
+/* Set paragraphs style */
+p {
+  margin: 5px;
+  padding: 5px;
+  background-color: deeppink;
+}
+
+/* Set button style */
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: lightpink;
+}
+
+/* Set button hover style */
+button:hover {
+  color: white;
+  background-color: deeppink;
+}
+
+/* Set button disabled style to all grey*/
+button:disabled {
+  background-color: lightgrey;
+  color: grey;
+}
+
+/* Set all images to have 5% size of parent element and 5px margin */
+img {
+  width: 50%;
+  margin: 5px;
+}
+
+
+/** 
+ * set element sizes:
+ * Width is fixed
+ * Height + Margin are 2vh above 100vh to prevent more than one element being in view at the same time.
+ */
+.container {
+  width: 800px;
+  height: 70vh;
+  margin: 16vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define our blue color */
+.blue {
+  --blue-bg: #dcedfc;
+  background-color: var(--blue-bg);
+}
+
+/* Define our green color */
+.green {
+  --green-bg: #d4ffd5;
+  background-color: var(--green-bg);
+}
+
+/* Define color of all paragraphs inside a blue container */
+.blue p {
+  color: var(--blue-bg);
+}
+
+/* Define color of all paragraphs inside a green container */
+.green p {
+  color: var(--green-bg);
+}
